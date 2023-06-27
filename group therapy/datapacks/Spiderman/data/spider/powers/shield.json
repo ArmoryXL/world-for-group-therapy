@@ -1,0 +1,11 @@
+{
+    "name": "Unwieldy",
+    "description": "You take the hits.",
+    "type": "origins:prevent_item_use",
+    "item_condition": {
+        "type": "origins:ingredient",
+        "ingredient": {
+            "item": "shield"
+        }
+    }
+}

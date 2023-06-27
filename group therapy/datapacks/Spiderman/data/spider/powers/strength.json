@@ -1,0 +1,19 @@
+{
+	"type": "origins:stacking_status_effect",
+	"min_stacks": 0,
+	"max_stacks": 2,
+	"duration_per_stack": 200,
+	"effect": {
+		"effect": "minecraft:strength",
+		"duration": 4000,
+		"is_ambient": true,
+		"show_particle": false,
+		"show_icon": false
+	},
+	"damage_condition": {
+		"type": "origins:amount",
+		"comparison": ">=",
+		"compare_to": 20
+	},
+	"hidden": true
+}

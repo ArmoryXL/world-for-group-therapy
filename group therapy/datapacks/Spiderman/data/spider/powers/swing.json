@@ -1,0 +1,44 @@
+{
+	"type": "origins:active_self",
+	"entity_action": {
+		"type": "origins:raycast",
+		"distance": 65,
+		"block": true,
+		"entity": true,
+		"shape_type": "outline",
+		"fluid_handling": "none",
+		"bientity_action": {
+			"type": "origins:add_velocity",
+			"z": -1.2
+		},
+		"hit_action": {
+			"type": "origins:and",
+			"actions": [{
+					"type": "origins:add_velocity",
+					"z": 2,
+					"space": "local",
+					"set": true
+				},
+				{
+					"type": "origins:add_velocity",
+					"y": 0.25,
+					"space": "world",
+					"set": false
+				}
+			]
+		},
+		"command_along_ray": "particle block cobweb ~ ~ ~ 0 0 0 0 1 normal",
+		"command_step": 0.1,
+		"command_along_ray_only_on_hit": true
+	},
+	"cooldown": 15,
+	"key": {
+		"key": "key.origins.primary_active"
+	},
+	"hud_render": {
+		"should_render": true,
+		"bar_index": 4
+	},
+	"name": "Web Shot",
+	"description": "Shoot a web that sticks to blocks or entities and pulls you towards them. In addition, it pulls entities closer to you, despite the size. (Credits to Doge#2974)"
+}
